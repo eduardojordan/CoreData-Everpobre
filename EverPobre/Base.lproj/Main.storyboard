@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="116" width="375" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NotebookListCell" rowHeight="84" id="r9W-ch-Yon">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NotebookListCell" rowHeight="84" id="r9W-ch-Yon" customClass="NotebookListCell" customModule="EverPobre" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r9W-ch-Yon" id="del-GG-MeY">
@@ -41,14 +41,14 @@
                                                             <rect key="frame" x="68.5" y="22.5" width="253.5" height="41"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notebook title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsG-yg-GK9">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="253.5" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="253.5" height="21.5"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creation Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWO-nS-Os7">
-                                                                    <rect key="frame" x="0.0" y="20.5" width="253.5" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <rect key="frame" x="0.0" y="21.5" width="253.5" height="19.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -64,8 +64,16 @@
                                                 <constraint firstItem="8le-Gq-cRM" firstAttribute="leading" secondItem="del-GG-MeY" secondAttribute="leading" constant="10" id="v2g-Ud-U5U"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="creationDateLabel" destination="RWO-nS-Os7" id="cdW-rd-6Kj"/>
+                                            <outlet property="titleLabel" destination="bsG-yg-GK9" id="0k5-HW-mib"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="puV-d6-kVB" id="NVd-c9-asp"/>
+                                    <outlet property="delegate" destination="puV-d6-kVB" id="QOA-3x-WtL"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,6 +86,9 @@
                         <viewLayoutGuide key="safeArea" id="pEW-Dg-9K6"/>
                     </view>
                     <navigationItem key="navigationItem" title="Notebooks" id="qgb-c8-mLx"/>
+                    <connections>
+                        <outlet property="tableView" destination="Hln-zj-Uw0" id="tN7-eJ-bcJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XNe-Cb-ZVK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
