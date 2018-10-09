@@ -17,6 +17,7 @@ class NotebookListCell: UITableViewCell{
     override func prepareForReuse() {
         titleLabel.text = nil
         creationDateLabel.text = nil
+        super.prepareForReuse()
     }
     
     func configure(with notebook: Notebook){

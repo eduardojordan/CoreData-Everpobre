@@ -17,9 +17,13 @@ class NotebookListViewController: UIViewController{
             tableView.reloadData()
         }
     }
+    
+    
     override func viewDidLoad() {
         model = Notebook.dummyNotebookModel
+        super.viewDidLoad()
     }
+    
 }
 
 extension NotebookListViewController: UITableViewDataSource{
@@ -35,6 +39,29 @@ extension NotebookListViewController: UITableViewDataSource{
         return cell
         
     }
+
+}
+
+extension NotebookListViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
     
-    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let notebook = model [indexPath.row]
+        let notesListVC = NotesListViewController(notebook: notebook)
+        self.show(notesListVC, sender: nil)
+       //  navigationController?.show(notesListVC, sender: nil)// <-se puede usar esta otra opcion
+    }
+
+
+//override func prepare(for segue: UIStoryboardSegue, sender:Any?){
+//    if segue.identifier == "pushdet"{
+//     let vc = segue.destination as! NotesListViewController
+//     let indexPath = tableView.indexPathsForSelectedRows!
+//     vc.notebook = model[indexPath].notebook
+//        
+//        
+//        }
+//    }
 }

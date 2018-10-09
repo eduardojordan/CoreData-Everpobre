@@ -14,6 +14,10 @@
 		A04FD430216CCA64000489A3 /* NotebookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FD42F216CCA64000489A3 /* NotebookListViewController.swift */; };
 		A04FD432216CD78E000489A3 /* NotebookListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FD431216CD78E000489A3 /* NotebookListCell.swift */; };
 		A04FD435216CD9B4000489A3 /* Notebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FD434216CD9B4000489A3 /* Notebook.swift */; };
+		A04FD437216CFA1C000489A3 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FD436216CFA1C000489A3 /* Note.swift */; };
+		A04FD43A216CFAF9000489A3 /* NotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FD439216CFAF9000489A3 /* NotesListViewController.swift */; };
+		A04FD43E216D094A000489A3 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FD43C216D094A000489A3 /* NoteDetailViewController.swift */; };
+		A04FD43F216D094A000489A3 /* NoteDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04FD43D216D094A000489A3 /* NoteDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		A04FD42F216CCA64000489A3 /* NotebookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookListViewController.swift; sourceTree = "<group>"; };
 		A04FD431216CD78E000489A3 /* NotebookListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookListCell.swift; sourceTree = "<group>"; };
 		A04FD434216CD9B4000489A3 /* Notebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notebook.swift; sourceTree = "<group>"; };
+		A04FD436216CFA1C000489A3 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		A04FD439216CFAF9000489A3 /* NotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewController.swift; sourceTree = "<group>"; };
+		A04FD43C216D094A000489A3 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		A04FD43D216D094A000489A3 /* NoteDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 		A04FD41B216CC6F5000489A3 /* EverPobre */ = {
 			isa = PBXGroup;
 			children = (
+				A04FD43B216D08EB000489A3 /* NoteDetails */,
+				A04FD438216CFAD5000489A3 /* NoteList */,
 				A04FD433216CD9A1000489A3 /* Model */,
 				A04FD42E216CC842000489A3 /* NotebookList */,
 				A04FD41C216CC6F5000489A3 /* AppDelegate.swift */,
@@ -82,8 +92,27 @@
 			isa = PBXGroup;
 			children = (
 				A04FD434216CD9B4000489A3 /* Notebook.swift */,
+				A04FD436216CFA1C000489A3 /* Note.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A04FD438216CFAD5000489A3 /* NoteList */ = {
+			isa = PBXGroup;
+			children = (
+				A04FD439216CFAF9000489A3 /* NotesListViewController.swift */,
+			);
+			name = NoteList;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A04FD43B216D08EB000489A3 /* NoteDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A04FD43C216D094A000489A3 /* NoteDetailViewController.swift */,
+				A04FD43D216D094A000489A3 /* NoteDetailViewController.xib */,
+			);
+			path = NoteDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04FD427216CC6F7000489A3 /* LaunchScreen.storyboard in Resources */,
+				A04FD43F216D094A000489A3 /* NoteDetailViewController.xib in Resources */,
 				A04FD424216CC6F7000489A3 /* Assets.xcassets in Resources */,
 				A04FD422216CC6F5000489A3 /* Main.storyboard in Resources */,
 			);
@@ -157,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04FD437216CFA1C000489A3 /* Note.swift in Sources */,
+				A04FD43E216D094A000489A3 /* NoteDetailViewController.swift in Sources */,
 				A04FD430216CCA64000489A3 /* NotebookListViewController.swift in Sources */,
 				A04FD41D216CC6F5000489A3 /* AppDelegate.swift in Sources */,
 				A04FD435216CD9B4000489A3 /* Notebook.swift in Sources */,
+				A04FD43A216CFAF9000489A3 /* NotesListViewController.swift in Sources */,
 				A04FD432216CD78E000489A3 /* NotebookListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
