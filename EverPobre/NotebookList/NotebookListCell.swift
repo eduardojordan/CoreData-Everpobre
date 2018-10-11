@@ -20,19 +20,18 @@ class NotebookListCell: UITableViewCell{
         super.prepareForReuse()
     }
     
-    func configure(with notebook: Notebook){
+    func configure(with notebook: Notebook) {
         titleLabel.text = notebook.name
-        creationDateLabel.text = creationString(from: notebook.creationDate)
-        
+        creationDateLabel.text = "Creado: \((notebook.creationDate as Date?)?.customStringLabel() ?? "ND")"
     }
     
-    private func creationString(from date: Date)-> String{
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .none
-        dateFormatter.locale = Locale(identifier: "en_US")
-        
-        return "Creando: \(dateFormatter.string(from:date))"
-    }
+//    private func creationString(from date: Date)-> String{
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateStyle = .medium
+//        dateFormatter.timeStyle = .none
+//        dateFormatter.locale = Locale(identifier: "en_US")
+//        
+//        return "Creando: \(dateFormatter.string(from:date))"
+//    }
     
 }
