@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import CoreData
+
+protocol NoteDeatailsViewControllerProtocol: class {
+    func didSaveNote()
+}
 
 class NoteDetailsViewController: UIViewController {
     
@@ -28,14 +33,19 @@ class NoteDetailsViewController: UIViewController {
     
     //    let note: Note
     enum Kind {
-        case new
-        case existing(Note)
+        case new(notebook:Notebook)
+        case existing(note:Note)
     }
     
+    
+    let managedContex: NSManagedObjectContext
     let kind: Kind
     
-    init(kind: Kind) {
+    weak var delegate:NoteDeatailsViewControllerProtocol?
+    
+    init(kind: Kind, managedContex: NSManagedObjectContext) {
         self.kind = kind
+        self.managedContex = managedContex
         super.init(nibName: "NoteDetailsViewController", bundle: nil)
     }
     
@@ -62,7 +72,44 @@ class NoteDetailsViewController: UIViewController {
         }
     }
     
-    @objc private func saveNote() { }
+    @objc private func saveNote() {
+        
+        switch kind {
+        case .existing(let note ):
+            note.title = titleTextField.text
+            note.text = descriptionTextView.text
+            note.lastSeenDate = NSDate()
+            
+            do{
+                try managedContex.save()
+                delegate?.didSaveNote()
+            } catch let error as NSError{
+                print("error:\(error.localizedDescription)")
+            }
+            navigationController?.popViewController(animated:true)
+        case .new(let notebook):
+           let note = Note(context: managedContex)
+           note.title = titleTextField.text
+           note.text = descriptionTextView.text
+           note.creationDate = NSDate()
+           note.notebook = notebook
+            
+           if let notes = notebook.notes?.mutableCopy() as? NSMutableOrderedSet{
+             notes.add(note)
+             notebook.notes = notes
+            }
+           
+           do{
+            try managedContex.save()
+             delegate?.didSaveNote()
+           } catch let error as NSError{
+            print("error:\(error.localizedDescription)")
+            }
+           
+            dismiss(animated: true, completion: nil)
+        }
+        
+    }
     
     @objc private func cancel() {
         dismiss(animated: true, completion: nil)
@@ -70,7 +117,7 @@ class NoteDetailsViewController: UIViewController {
     
     private func configureValues() {
         title = kind.title
-        titleTextField.text = kind.note?.text
+        titleTextField.text = kind.note?.title
         //tagsLabel.text = note.tags?.joined(separator: ",")
         creationDateLabel.text = "Creado: \((kind.note?.creationDate as Date?)?.customStringLabel() ?? "ND")"
         lastSeenDateLabel.text = "Visto: \((kind.note?.lastSeenDate as Date?)?.customStringLabel() ?? "ND")"
