@@ -42,7 +42,7 @@ class NotesListViewController: UIViewController {
         self.notebook = notebook
         self.notes = (notebook.notes?.array as? [Note]) ?? []
         self.managedContex = managedContex
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: "NewNotesListViewController", bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {

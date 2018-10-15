@@ -26,6 +26,10 @@
 		A04FD459216D43A7000489A3 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FD455216D43A7000489A3 /* Note+CoreDataProperties.swift */; };
 		A04FD45A216D43A7000489A3 /* Notebook+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FD456216D43A7000489A3 /* Notebook+CoreDataClass.swift */; };
 		A04FD45B216D43A7000489A3 /* Notebook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FD457216D43A7000489A3 /* Notebook+CoreDataProperties.swift */; };
+		A08CA9812174C6BC00662691 /* NewNotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08CA97F2174C6BC00662691 /* NewNotesListViewController.swift */; };
+		A08CA9822174C6BC00662691 /* NewNotesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08CA9802174C6BC00662691 /* NewNotesListViewController.xib */; };
+		A08CA9852174CF5C00662691 /* NotesListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08CA9832174CF5C00662691 /* NotesListCollectionViewCell.swift */; };
+		A08CA9862174CF5C00662691 /* NotesListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08CA9842174CF5C00662691 /* NotesListCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		A04FD455216D43A7000489A3 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataProperties.swift"; path = "EverPobre/Model/Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A04FD456216D43A7000489A3 /* Notebook+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Notebook+CoreDataClass.swift"; path = "EverPobre/Model/Notebook+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A04FD457216D43A7000489A3 /* Notebook+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Notebook+CoreDataProperties.swift"; path = "EverPobre/Model/Notebook+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A08CA97F2174C6BC00662691 /* NewNotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNotesListViewController.swift; sourceTree = "<group>"; };
+		A08CA9802174C6BC00662691 /* NewNotesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewNotesListViewController.xib; sourceTree = "<group>"; };
+		A08CA9832174CF5C00662691 /* NotesListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListCollectionViewCell.swift; sourceTree = "<group>"; };
+		A08CA9842174CF5C00662691 /* NotesListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesListCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +132,10 @@
 			isa = PBXGroup;
 			children = (
 				A04FD439216CFAF9000489A3 /* NotesListViewController.swift */,
+				A08CA97F2174C6BC00662691 /* NewNotesListViewController.swift */,
+				A08CA9802174C6BC00662691 /* NewNotesListViewController.xib */,
+				A08CA9832174CF5C00662691 /* NotesListCollectionViewCell.swift */,
+				A08CA9842174CF5C00662691 /* NotesListCollectionViewCell.xib */,
 			);
 			name = NoteList;
 			path = "New Group";
@@ -206,8 +218,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04FD427216CC6F7000489A3 /* LaunchScreen.storyboard in Resources */,
+				A08CA9862174CF5C00662691 /* NotesListCollectionViewCell.xib in Resources */,
 				A04FD43F216D094A000489A3 /* NoteDetailsViewController.xib in Resources */,
 				A04FD424216CC6F7000489A3 /* Assets.xcassets in Resources */,
+				A08CA9822174C6BC00662691 /* NewNotesListViewController.xib in Resources */,
 				A04FD422216CC6F5000489A3 /* Main.storyboard in Resources */,
 				A04FD441216D2D11000489A3 /* 120x180.png in Resources */,
 			);
@@ -220,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08CA9812174C6BC00662691 /* NewNotesListViewController.swift in Sources */,
 				A04FD437216CFA1C000489A3 /* deprecated_Note.swift in Sources */,
 				A04FD43E216D094A000489A3 /* NoteDetailsViewController.swift in Sources */,
 				A04FD458216D43A7000489A3 /* Note+CoreDataClass.swift in Sources */,
@@ -227,6 +242,7 @@
 				A04FD45B216D43A7000489A3 /* Notebook+CoreDataProperties.swift in Sources */,
 				A04FD430216CCA64000489A3 /* NotebookListViewController.swift in Sources */,
 				A04FD459216D43A7000489A3 /* Note+CoreDataProperties.swift in Sources */,
+				A08CA9852174CF5C00662691 /* NotesListCollectionViewCell.swift in Sources */,
 				A04FD41D216CC6F5000489A3 /* AppDelegate.swift in Sources */,
 				A04FD453216D4387000489A3 /* deprecated_Notebook.swift in Sources */,
 				A04FD446216D3854000489A3 /* CoreDataStack.swift in Sources */,
