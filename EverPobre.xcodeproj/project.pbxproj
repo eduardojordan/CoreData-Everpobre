@@ -16,7 +16,6 @@
 		A04FD437216CFA1C000489A3 /* deprecated_Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FD436216CFA1C000489A3 /* deprecated_Note.swift */; };
 		A04FD43A216CFAF9000489A3 /* NotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FD439216CFAF9000489A3 /* NotesListViewController.swift */; };
 		A04FD43E216D094A000489A3 /* NoteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FD43C216D094A000489A3 /* NoteDetailsViewController.swift */; };
-		A04FD43F216D094A000489A3 /* NoteDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04FD43D216D094A000489A3 /* NoteDetailsViewController.xib */; };
 		A04FD441216D2D11000489A3 /* 120x180.png in Resources */ = {isa = PBXBuildFile; fileRef = A04FD440216D2D11000489A3 /* 120x180.png */; };
 		A04FD444216D2FB2000489A3 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FD443216D2FB2000489A3 /* Date+Utils.swift */; };
 		A04FD446216D3854000489A3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FD445216D3854000489A3 /* CoreDataStack.swift */; };
@@ -30,6 +29,11 @@
 		A08CA9822174C6BC00662691 /* NewNotesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08CA9802174C6BC00662691 /* NewNotesListViewController.xib */; };
 		A08CA9852174CF5C00662691 /* NotesListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08CA9832174CF5C00662691 /* NotesListCollectionViewCell.swift */; };
 		A08CA9862174CF5C00662691 /* NotesListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08CA9842174CF5C00662691 /* NotesListCollectionViewCell.xib */; };
+		A08CA98B21753BDF00662691 /* UIImage+Alpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08CA98821753BDE00662691 /* UIImage+Alpha.swift */; };
+		A08CA98C21753BDF00662691 /* UIImage+ReSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08CA98921753BDF00662691 /* UIImage+ReSize.swift */; };
+		A08CA98D21753BDF00662691 /* UIImage+RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08CA98A21753BDF00662691 /* UIImage+RoundCorner.swift */; };
+		A0BA27C9217B267500F88C8E /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BA27C8217B267500F88C8E /* Animator.swift */; };
+		A0BA27CB217B2A8F00F88C8E /* NoteDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BA27CA217B2A8F00F88C8E /* NoteDetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +48,6 @@
 		A04FD436216CFA1C000489A3 /* deprecated_Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deprecated_Note.swift; sourceTree = "<group>"; };
 		A04FD439216CFAF9000489A3 /* NotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewController.swift; sourceTree = "<group>"; };
 		A04FD43C216D094A000489A3 /* NoteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsViewController.swift; sourceTree = "<group>"; };
-		A04FD43D216D094A000489A3 /* NoteDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteDetailsViewController.xib; sourceTree = "<group>"; };
 		A04FD440216D2D11000489A3 /* 120x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120x180.png; sourceTree = "<group>"; };
 		A04FD443216D2FB2000489A3 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		A04FD445216D3854000489A3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -58,6 +61,12 @@
 		A08CA9802174C6BC00662691 /* NewNotesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewNotesListViewController.xib; sourceTree = "<group>"; };
 		A08CA9832174CF5C00662691 /* NotesListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListCollectionViewCell.swift; sourceTree = "<group>"; };
 		A08CA9842174CF5C00662691 /* NotesListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesListCollectionViewCell.xib; sourceTree = "<group>"; };
+		A08CA98721751AEA00662691 /* Everpobre v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Everpobre v2.xcdatamodel"; sourceTree = "<group>"; };
+		A08CA98821753BDE00662691 /* UIImage+Alpha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Alpha.swift"; sourceTree = "<group>"; };
+		A08CA98921753BDF00662691 /* UIImage+ReSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ReSize.swift"; sourceTree = "<group>"; };
+		A08CA98A21753BDF00662691 /* UIImage+RoundCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+RoundCorner.swift"; sourceTree = "<group>"; };
+		A0BA27C8217B267500F88C8E /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		A0BA27CA217B2A8F00F88C8E /* NoteDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteDetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,7 @@
 		A04FD41B216CC6F5000489A3 /* EverPobre */ = {
 			isa = PBXGroup;
 			children = (
+				A0BA27C8217B267500F88C8E /* Animator.swift */,
 				A04FD440216D2D11000489A3 /* 120x180.png */,
 				A04FD442216D2F99000489A3 /* Utils */,
 				A04FD433216CD9A1000489A3 /* Model */,
@@ -145,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				A04FD43C216D094A000489A3 /* NoteDetailsViewController.swift */,
-				A04FD43D216D094A000489A3 /* NoteDetailsViewController.xib */,
+				A0BA27CA217B2A8F00F88C8E /* NoteDetailsViewController.xib */,
 			);
 			path = NoteDetails;
 			sourceTree = "<group>";
@@ -153,6 +163,9 @@
 		A04FD442216D2F99000489A3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A08CA98821753BDE00662691 /* UIImage+Alpha.swift */,
+				A08CA98921753BDF00662691 /* UIImage+ReSize.swift */,
+				A08CA98A21753BDF00662691 /* UIImage+RoundCorner.swift */,
 				A04FD443216D2FB2000489A3 /* Date+Utils.swift */,
 				A04FD445216D3854000489A3 /* CoreDataStack.swift */,
 			);
@@ -219,7 +232,7 @@
 			files = (
 				A04FD427216CC6F7000489A3 /* LaunchScreen.storyboard in Resources */,
 				A08CA9862174CF5C00662691 /* NotesListCollectionViewCell.xib in Resources */,
-				A04FD43F216D094A000489A3 /* NoteDetailsViewController.xib in Resources */,
+				A0BA27CB217B2A8F00F88C8E /* NoteDetailsViewController.xib in Resources */,
 				A04FD424216CC6F7000489A3 /* Assets.xcassets in Resources */,
 				A08CA9822174C6BC00662691 /* NewNotesListViewController.xib in Resources */,
 				A04FD422216CC6F5000489A3 /* Main.storyboard in Resources */,
@@ -234,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0BA27C9217B267500F88C8E /* Animator.swift in Sources */,
 				A08CA9812174C6BC00662691 /* NewNotesListViewController.swift in Sources */,
 				A04FD437216CFA1C000489A3 /* deprecated_Note.swift in Sources */,
 				A04FD43E216D094A000489A3 /* NoteDetailsViewController.swift in Sources */,
@@ -241,12 +255,15 @@
 				A04FD449216D3CFF000489A3 /* Everpobre.xcdatamodeld in Sources */,
 				A04FD45B216D43A7000489A3 /* Notebook+CoreDataProperties.swift in Sources */,
 				A04FD430216CCA64000489A3 /* NotebookListViewController.swift in Sources */,
+				A08CA98C21753BDF00662691 /* UIImage+ReSize.swift in Sources */,
 				A04FD459216D43A7000489A3 /* Note+CoreDataProperties.swift in Sources */,
 				A08CA9852174CF5C00662691 /* NotesListCollectionViewCell.swift in Sources */,
 				A04FD41D216CC6F5000489A3 /* AppDelegate.swift in Sources */,
 				A04FD453216D4387000489A3 /* deprecated_Notebook.swift in Sources */,
 				A04FD446216D3854000489A3 /* CoreDataStack.swift in Sources */,
+				A08CA98D21753BDF00662691 /* UIImage+RoundCorner.swift in Sources */,
 				A04FD444216D2FB2000489A3 /* Date+Utils.swift in Sources */,
+				A08CA98B21753BDF00662691 /* UIImage+Alpha.swift in Sources */,
 				A04FD45A216D43A7000489A3 /* Notebook+CoreDataClass.swift in Sources */,
 				A04FD43A216CFAF9000489A3 /* NotesListViewController.swift in Sources */,
 				A04FD432216CD78E000489A3 /* NotebookListCell.swift in Sources */,
@@ -454,9 +471,10 @@
 		A04FD447216D3CFF000489A3 /* Everpobre.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				A08CA98721751AEA00662691 /* Everpobre v2.xcdatamodel */,
 				A04FD448216D3CFF000489A3 /* Everpobre.xcdatamodel */,
 			);
-			currentVersion = A04FD448216D3CFF000489A3 /* Everpobre.xcdatamodel */;
+			currentVersion = A08CA98721751AEA00662691 /* Everpobre v2.xcdatamodel */;
 			path = Everpobre.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -8,11 +8,10 @@
 
 import UIKit
 
-
-class NotebookListCell: UITableViewCell{
+class NotebookListCell: UITableViewCell {
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var creationDateLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var creationDateLabel: UILabel!
     
     override func prepareForReuse() {
         titleLabel.text = nil
@@ -24,14 +23,4 @@ class NotebookListCell: UITableViewCell{
         titleLabel.text = notebook.name
         creationDateLabel.text = "Creado: \((notebook.creationDate as Date?)?.customStringLabel() ?? "ND")"
     }
-    
-//    private func creationString(from date: Date)-> String{
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.dateStyle = .medium
-//        dateFormatter.timeStyle = .none
-//        dateFormatter.locale = Locale(identifier: "en_US")
-//        
-//        return "Creando: \(dateFormatter.string(from:date))"
-//    }
-    
 }

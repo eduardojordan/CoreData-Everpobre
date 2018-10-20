@@ -23,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             else { return true }
         
         // Inyectar coredata stack al VC
-        viewController.managedContext = coreDataStack.managedContext
+        //viewController.managedContext = coreDataStack.managedContext
+        viewController.coredataStack = coreDataStack
         
         return true
     }
@@ -36,4 +37,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         coreDataStack.saveContext()
     }
 }
+
 

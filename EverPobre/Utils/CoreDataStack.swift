@@ -18,11 +18,17 @@ class CoreDataStack {
         return self.storeContainer.viewContext
     }()
     
+    
+    lazy var backgroundContex : NSManagedObjectContext = {
+        return self.storeContainer.newBackgroundContext()
+    }()
+    
+    
     init(modelName: String) {
         self.modelName = modelName
     }
     
-    private lazy var storeContainer: NSPersistentContainer = {
+   /* private */ lazy var storeContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: self.modelName)
         container.loadPersistentStores { storeDescription, error in
             if let error = error as NSError? {
